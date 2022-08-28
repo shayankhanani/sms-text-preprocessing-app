@@ -8,8 +8,7 @@ import streamlit as st
 import pandas as pd
 import re
 import nltk
-nltk.download('stopwords')
-nltk.download('wordnet')
+
 import string
 pd.options.mode.chained_assignment = None
 import chatwords as cw
@@ -18,7 +17,8 @@ from collections import Counter
 import matplotlib.pyplot as plt
 import plotly.express as px
 
-
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 
 REMOVE_PUNCT = string.punctuation
